@@ -10,13 +10,14 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container">
-            <a class="navbar-brand " href=""><img src="../../assets/images/logo.png" class="img-fluid rounded-top"
+            <a class="navbar-brand " href=""><img src="assets/images/logo.png" class="img-fluid rounded-top"
+
                     alt="" />
             </a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -31,8 +32,17 @@
                     </li>
                 </ul>
                 <div class="d-flex flex-column ">
-                    <a name="" id="" class="btn btn-primary mb-2" href="index.php?controller=admin&action="
-                        role="button">Button</a>
+
+                <?php if (isset($username_log)): ?>
+        
+        <span class="btn btn-success mb-2 mr-2">Xin chào, <?php echo htmlspecialchars($username_log); ?>!</span>
+
+       
+        <a name="" id="" class="btn btn-danger mb-2" href="index.php?controller=home&action=index" role="button">Đăng xuất</a>
+    <?php else: ?>
+       
+        <a name="" id="" class="btn btn-primary mb-2" href="index.php?controller=admin&action=login" role="button">Đăng nhập</a>
+    <?php endif; ?>
 
                     <form class="d-flex my-2 my-lg-0">
                         <input class="form-control me-sm-2" type="text" placeholder="Tìm kiếm" />
@@ -59,10 +69,11 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../../assets/images/baner-webthumb.jpg" class="d-block w-100" alt="...">
+
+                        <img src="assets/images/baner-webthumb.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../../assets/images/web1.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/images/web1.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -105,11 +116,15 @@
             <!-- Main Image Section -->
             <div class="col-md-8">
                 <div class="text-center mb-3">
-                    <img src="../../assets/images/images.jpg" alt="Event" class="img-fluid rounded">
+
+                   
+
+                    <img src="assets/images/baner-webthumb.jpg" alt="Event" class="img-fluid rounded">
+
                 </div>
                 <h2 class="h5">Trường Đại học Thủy lợi gặp mặt LHS nước ngoài nhân dịp Quốc khánh</h2>
                 <p>
-                    TLU – Chiều 2/12, tại P225/A2, Trường Đại học Thủy lợi tổ chức buổi gặp mặt lưu học sinh nhân dịp
+                    TLU Chiều 2/12, tại P225/A2, Trường Đại học Thủy lợi tổ chức buổi gặp mặt lưu học sinh nhân dịp
                     Quốc khánh nước CHDCND Lào (02/12), Vương quốc Campuchia...
                 </p>
             </div>
@@ -142,13 +157,14 @@
     <div class="container mt-3">
         <div class="row g-3">
             <div class="col-md-4">
-                <img src="../../assets/images/TuyenSinhDH.jpg" alt="Banner 1" class="img-fluid rounded">
+
+                <img src="assets/images/TuyenSinhDH.jpg" alt="Banner 1" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-                <img src="../../assets/images/TuyenSinhThacSi.jpg" alt="Banner 2" class="img-fluid rounded">
+                <img src="assets/images/TuyenSinhThacSi.jpg" alt="Banner 2" class="img-fluid rounded">
             </div>
             <div class="col-md-4">
-                <img src="../../assets/images/TuyenSinhTS.jpg" alt="Banner 3" class="img-fluid rounded">
+                <img src="assets/images/TuyenSinhTS.jpg" alt="Banner 3" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -159,7 +175,8 @@
         <div class="row g-3">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="../../assets/images/mai.jpg" alt="Thông báo" class="card-img-top object-fit-cover"
+
+                    <img src="assets/images/mai.jpg" alt="Thông báo" class="card-img-top object-fit-cover"
                         style="height: 250px;">
                     <div class="card-body">
                         <p class="card-text">
@@ -170,7 +187,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="../../assets/images/tuongvy.jpg" alt="Chuẩn đầu ra 1"
+
+                    <img src="assets/images/tuongvy.jpg" alt="Chuẩn đầu ra 1"
                         class="card-img-top object-fit-cover" style="height: 250px;">
                     <div class="card-body">
                         <p class="card-text">
@@ -181,7 +199,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="../../assets/images/haiduong.jpg" alt="Chuẫn đầu ra 2"
+                    <img src="assets/images/haiduong.jpg" alt="Chuẫn đầu ra 2"
                         class="card-img-top object-fit-cover" style="height: 250px;">
                     <div class="card-body">
                         <p class="card-text">
@@ -235,7 +253,9 @@
             <div class="row text-white" id="fut">
                 <div class="col-3"></div>
                 <div class="col-3">
-                    <img class="card-img-top mt-2 mx-2 mb-2" src="../../assets/images/robot.png" alt="Logo" />
+
+                    <img class="card-img-top mt-2 mx-2 mb-2" src="assets/images/robot.png" alt="Logo" />
+
                 </div>
                 <div class="col-3">
                     <div class="content d-flex my-3">
