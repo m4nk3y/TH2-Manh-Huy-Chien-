@@ -12,7 +12,7 @@
         <div class="row text-white" id="fut">
             <div class="col-3"></div>
             <div class="col-3">
-            <img class="card-img-top mt-2 mx-2 mb-2" src="" alt="Logo" />
+            <img class="card-img-top mt-2 mx-2 mb-2" src="../../assets/images/robot.png" alt="Logo" />
             </div>
             <div class="col-3">
                 <div class="content d-flex my-3">

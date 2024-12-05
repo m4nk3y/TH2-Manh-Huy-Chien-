@@ -6,7 +6,9 @@
     </div>
 
     <div style="display: flex; justify-content:center;">
-        <a href="dashboard.php?route=add" class="btn btn btn-success mb-3">Add News</a>
+        <a href="dashboard.php?route=add" class="btn btn btn-success mb-3">Thêm News</a>
+        <a href="../../index.php?controller=home&action=index" class="btn btn-danger mb-3 mx-5">Đăng xuất</a>
+
     </div>
 
     <table class="table table-bordered table-striped">
@@ -41,34 +43,6 @@
         </tbody>
     </table>
 </div>
-<footer class="mt-auto text-white text-center ">
-        <div class="container-lg ">
-            
-        </div> 
-        <div class="row text-white" id="fut1">
-            <div class="col-3"></div>
-            <div class="col-6 text-center">
-                <h4 class="card-title my-4 text-center">@2024 TRƯỜNG ĐẠI HỌC THỦY LỢI</h4>
-            </div>
-            <div class="col-3"></div>
-        </div>
-        <div class="row text-white" id="fut">
-            <div class="col-3"></div>
-            <div class="col-3">
-            <img class="card-img-top mt-2 mx-2 mb-2" src="../../../assets/images/ro" alt="Logo" />
-            </div>
-            <div class="col-3">
-                <div class="content d-flex my-3">
-                    
-                    <div class="card-body my-2 mx-3">
-                        <h4>TRƯỜNG ĐẠI HỌC THỦY LỢI</h4>
-                        <p class="h5">SDT: 0942131233</p>
-                        <p class="h5">Địa chỉ: 178 Tây Sơn</p>
-                        <p class="h5">Email: Skibidi@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3"></div>
-        </div>
-    </footer>
-<?php require __DIR__ .'/../../../include/footer.php' ?>
+
+<?php require __DIR__ . '/../../../include/footer.php' ?>
+

@@ -16,7 +16,7 @@ class AdminController
             foreach ($userList as $user) {
                 if ($user['username'] == $username && $user['password'] == $password) {
                     if ($user['role'] == 1) {
-                        require_once "views/admin/dashboard.php";
+                        header('location: views/admin/dashboard.php');
                         exit();
                     } 
                     else if ($user['role'] == 0) {
