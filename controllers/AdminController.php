@@ -14,15 +14,16 @@ class AdminController {
                         
                         require_once "views/admin/dashboard.php";
                         exit();
-                    } else {
+                    } else if( $user["role"] == 0) {
                         $username_log = $_POST['username'];
                         require_once "views/home/index.php";
+                    }else{
+                            $error = "Tên đăng nhập hoặc mật khẩu không đúng.";
+                            
                     }
                 }
             }
-            if (!isset($error)) {
-                $error = "Tên đăng nhập hoặc mật khẩu không đúng.";
-            }
+            
         }
     }
     
