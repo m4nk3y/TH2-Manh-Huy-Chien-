@@ -81,7 +81,9 @@
         </div>
     </header>
         </header>
-        <main></main>
+        <main>
+        
+        </main>
         <footer>
         <!doctype html>
 <html lang="en">
@@ -101,7 +103,139 @@
     </head>
 
     <body>
-    
+
+    <header class="bg-primary text-white text-center py-3">
+        
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary mt-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Tuyển sinh</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">65 Năm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thông tin việc làm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Đảm bảo chất lượng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tạp chí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TLU Mail</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lịch công tác</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-4">
+        <div class="row">
+            <!-- Main Image Section -->
+            <div class="col-md-8">
+                <div class="text-center mb-3">
+                    <img src="../../assets/images/images.jpg" alt="Event" class="img-fluid rounded">
+                </div>
+                <h2 class="h5">Trường Đại học Thủy lợi gặp mặt LHS nước ngoài nhân dịp Quốc khánh</h2>
+                <p>
+                    TLU – Chiều 2/12, tại P225/A2, Trường Đại học Thủy lợi tổ chức buổi gặp mặt lưu học sinh nhân dịp Quốc khánh nước CHDCND Lào (02/12), Vương quốc Campuchia...
+                </p>
+            </div>
+
+            <!-- Sidebar Section -->
+            <aside class="col-md-4">
+                <div class="card">
+                    <div class="card-header d-flex">
+                        <button class="btn btn-primary w-50">TIN TỨC</button>
+                        <button class="btn btn-outline-primary w-50">THÔNG BÁO</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#" class="text-decoration-none">Danh sách ứng viên được đề nghị bổ nhiệm chức danh giáo sư, phó giáo sư năm 2024</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none">Trường Đại học Thủy lợi gặp mặt LHS nước ngoài nhân dịp Quốc khánh</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none">Đội tuyển Olympic Vật lý giành Giải Nhì toàn đoàn</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none">Giải thưởng Loa Thành 2024: Tôn vinh tài năng trẻ ngành Xây dựng và Kiến trúc</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none">Khai giảng Khóa bồi dưỡng Lý luận chính trị dành cho đối tượng kết nạp Đảng</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Top Banners Section -->
+    <div class="container mt-3">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="../../assets/images/TuyenSinhDH.jpg" alt="Banner 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="../../assets/images/TuyenSinhThacSi.jpg" alt="Banner 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <img src="../../assets/images/TuyenSinhTS.jpg" alt="Banner 3" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Training Section -->
+    <div class="container mt-5">
+        <h3 class="text-primary">ĐÀO TẠO</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../../assets/images/mai.jpg" alt="Thông báo" class="card-img-top object-fit-cover" style="height: 250px;">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Thông tin thời gian bảo vệ luận án tiến sĩ cấp Trường của NCS Nguyễn Minh Tiến...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../../assets/images/tuongvy.jpg" alt="Chuẩn đầu ra 1" class="card-img-top object-fit-cover" style="height: 250px;">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Thông báo tổ chức thi chuẩn tiếng Anh đầu ra cho trình độ đại học hệ chính quy...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../../assets/images/haiduong.jpg" alt="Chuẫn đầu ra 2" class="card-img-top object-fit-cover" style="height: 250px;">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Thông báo kết quả thi chuẩn tiếng Anh đầu ra cho sinh viên ĐHCQ đợt 3 năm 2024...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Placeholder for future content -->
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Các chương trình đào tạo trình độ đại học...</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Thông tin luận án và thời gian bảo vệ luận án...</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Thông tin luận án tiến sĩ cấp Trường...</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Thông báo triển khai kế hoạch Tiếng Anh...</a>
+                    </li>
+                </ul>
+                <a href="#" class="d-block mt-2 text-end text-primary">» Xem tất cả</a>
+            </div>
+        </div>
+    </div>
+
+        </main>
 
    
     <footer class="mt-auto text-white text-center ">
