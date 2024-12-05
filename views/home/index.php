@@ -101,13 +101,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Tuyển sinh</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">65 Năm</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Thông tin việc làm</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Đảm bảo chất lượng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tạp chí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">TLU Mail</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Lịch công tác</a></li>
+                        <?php
+                        foreach ($categoryList as $category) { ?>
+                       <li class="nav-item"><a class="nav-link" href="index.php?controller=news&action="><?= $category['name']?></a></li>
+                    <?php
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

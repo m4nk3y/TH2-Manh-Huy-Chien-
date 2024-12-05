@@ -36,5 +36,5 @@ main {
     width: 250px;
 }
 #cot1{
-    background-image: url(../images/blue.jpg);
+    background-image: linear-gradient( #1B1931 , #44174E,#662249,#A34054,#ED9E59,#E9BCB9);
 }
