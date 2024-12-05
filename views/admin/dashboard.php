@@ -20,7 +20,7 @@
 <body>
     <main>
         <?php
-        require_once '../../controllers/AdminController.php';
+        require_once __DIR__ . '/../../controllers/AdminController.php';
 
         $adminController = new AdminController();
 
@@ -43,7 +43,7 @@
         ?>
     </main>
     <footer>
-        <!-- place footer here -->
+        
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
