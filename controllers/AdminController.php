@@ -1,5 +1,6 @@
 <?php
 require_once("models/User.php");
+require_once("models/Category.php");
 class AdminController {
     public function signin() {
        
@@ -17,6 +18,8 @@ class AdminController {
                     } 
                     else if ($user['role'] == 0) {
                         $username_log = $_POST['username'];
+                        $object = new Category();
+                        $categoryList = $object->getAlldata();
                         require_once "views/home/index.php";
                         exit();
                     }
