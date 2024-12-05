@@ -26,8 +26,22 @@
                         <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" />
                         <label for="" class="form-label">Mật Khẩu</label>
                         <input type="text" class="form-control" name="password" id="" aria-describedby="helpId" />
-
-                        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                        <?php if (!empty($error)): ?>
+                        <div class="alert alert-danger" role="alert" id="errorAlert">
+                            <?php echo htmlspecialchars($error); ?>!
+                        </div>
+                        <script>
+                        setTimeout(function() {
+                            var alert = document.getElementById('errorAlert');
+                            if (alert) {
+                                alert.style.display = 'none';
+                            }
+                        }, 3000);
+                        </script>
+                        <?php else: ?>
+                        <?php echo ""; ?>
+                        <?php endif; ?>
+                        <button type="submit" class="btn btn-primary w-100 mt-4">Đăng nhập</button>
                     </form>
                 </div>
             </div>
