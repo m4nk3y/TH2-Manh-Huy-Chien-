@@ -18,9 +18,7 @@
 </head>
 
 <body>
-    
     <main>
-
         <?php
         require_once '../../controllers/AdminController.php';
 
@@ -43,7 +41,6 @@
             $adminController->index();
         }
         ?>
-
     </main>
     <footer>
         <!-- place footer here -->
