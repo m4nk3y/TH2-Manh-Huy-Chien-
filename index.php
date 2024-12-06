@@ -28,11 +28,13 @@ if (file_exists($controllerFile)) {
 }
 
 
+
 // In your index.php or routing logic
 if (isset($_GET['query'])) {
     // Directly call the search method of the NewsController
     $newsController = new NewsController();
     $newsController->search($_GET['query']);
 }
+
 
 ?>

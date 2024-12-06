@@ -21,12 +21,12 @@
                 <div class="col-6">
                     <h3 class="text-center mb-4">Đăng nhập</h3>
                     <form method="post" action="index.php?controller=admin&action=signin">
-
                         <label for="" class="form-label">Tài khoản</label>
                         <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" />
                         <label for="" class="form-label">Mật Khẩu</label>
-                        <input type="text" class="form-control" name="password" id="" aria-describedby="helpId" />
+                        <input type="password" class="form-control" name="password" id="" aria-describedby="helpId" />
                         <?php if (!empty($error)): ?>
+
                         <div class="alert alert-danger mt-3 mb-3" role="alert" id="errorAlert">
                             <?php echo htmlspecialchars($error); ?>!
                         </div>
@@ -43,6 +43,7 @@
                         <?php endif; ?>
                         <button type="submit" class="btn btn-primary w-100 mt-4">Đăng nhập</button>
                     </form>
+
                 </div>
             </div>
         </div>
