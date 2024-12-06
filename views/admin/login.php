@@ -27,7 +27,7 @@
                         <label for="" class="form-label">Mật Khẩu</label>
                         <input type="text" class="form-control" name="password" id="" aria-describedby="helpId" />
                         <?php if (!empty($error)): ?>
-                        <div class="alert alert-danger" role="alert" id="errorAlert">
+                        <div class="alert alert-danger mt-3 mb-3" role="alert" id="errorAlert">
                             <?php echo htmlspecialchars($error); ?>!
                         </div>
                         <script>
