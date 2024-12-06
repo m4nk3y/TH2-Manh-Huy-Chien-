@@ -6,7 +6,8 @@
     </div>
 
     <div style="display: flex; justify-content:center;">
-        <a href="dashboard.php?route=add" class="btn btn btn-success mb-3">Add News</a>
+        <a href="/BTTH2PHP/Dev1/views/admin/dashboard.php?route=add" class="btn btn btn-success mb-3">Add News</a>
+        <a href="../../index.php?controller=home&action=index" class="btn btn btn-danger mb-3 mx-5">Đăng xuất</a>
     </div>
 
     <table class="table table-bordered table-striped">
@@ -33,8 +34,8 @@
                         <?php endif; ?>
                     </td>
                     <td>
-                        <a href="dashboard.php?route=edit&id=<?= $news['id'] ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                        <a href="dashboard.php?route=delete&id=<?= $news['id'] ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                        <a href="/BTTH2PHP/Dev1/views/admin/dashboard.php?route=edit&id=<?= $news['id'] ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                        <a href="/BTTH2PHP/Dev1/views/admin/dashboard.php?route=delete&id=<?= $news['id'] ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
                     </td>
                 </tr>
             <?php endforeach; ?>

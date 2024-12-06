@@ -16,12 +16,11 @@ class AdminController
             foreach ($userList as $user) {
                 if ($user['username'] == $username && $user['password'] == $password) {
                     if ($user['role'] == 1) {
-                        require_once "views/admin/dashboard.php";
+                        header("Location: views/admin/dashboard.php");
                         exit();
-                    } 
-                    else if ($user['role'] == 0) {
-                        $username_log = $_POST['username'];
-                        require_once "views/home/index.php";
+                    }
+                    elseif ($user['role'] == 0) {
+                        header("Location: index.php?controller=home&action=index");
                         exit();
                     }
                 }
