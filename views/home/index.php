@@ -38,7 +38,7 @@
                         <?php echo htmlspecialchars($username_log); ?>!</span>
 
 
-                    <a name="" id="" class="btn btn-danger mb-2" href="index.php?controller=home&action=index"
+                    <a name="" id="" class="btn btn-danger mb-2" href="index.php?controller=admin&action=signout"
                         role="button">Đăng xuất</a>
                     <?php else: ?>
 
@@ -50,9 +50,9 @@
                         <input type="hidden" name="controller" value="news">
                         <input type="hidden" name="action" value="search">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="query" placeholder="Search news..."
+                            <input type="text" class="form-control" name="query" placeholder="Tìm kiếm"
                                 value="<?= htmlspecialchars($_GET['query'] ?? '') ?>">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                            <button class="btn btn-primary" type="submit">Tìm</button>
                         </div>
                     </form>
 
@@ -248,16 +248,16 @@
             <div class="col-md-4">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="#" class="text-decoration-none">Các chương trình đào tạo trình độ đại học...</a>
+                        <a href="index.php?controller=home&action=home" class="text-decoration-none">Các chương trình đào tạo trình độ đại học...</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="text-decoration-none">Thông tin luận án và thời gian bảo vệ luận án...</a>
+                        <a href="index.php?controller=home&action=home" class="text-decoration-none">Thông tin luận án và thời gian bảo vệ luận án...</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="text-decoration-none">Thông tin luận án tiến sĩ cấp Trường...</a>
+                        <a href="index.php?controller=home&action=home" class="text-decoration-none">Thông tin luận án tiến sĩ cấp Trường...</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="text-decoration-none">Thông báo triển khai kế hoạch Tiếng Anh...</a>
+                        <a href="index.php?controller=home&action=home" class="text-decoration-none">Thông báo triển khai kế hoạch Tiếng Anh...</a>
                     </li>
                 </ul>
                 <a href="#" class="d-block mt-2 text-end text-primary">» Xem tất cả</a>

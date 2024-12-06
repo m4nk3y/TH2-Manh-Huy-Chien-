@@ -6,6 +6,15 @@ require_once __DIR__ . '/../models/Category.php';
 
 class AdminController
 {
+    public function signout(){
+        session_start(); 
+        session_unset(); 
+        $object = new Category();
+        $categoryList = $object->getAllCategories();
+        $newsModel = new News();
+        $newList = $newsModel->getAllNews();
+        require_once "views/home/index.php";
+    }
     public function signin() {
         if (isset($_POST["username"]) && isset($_POST["password"])) {
             $username = $_POST['username'];

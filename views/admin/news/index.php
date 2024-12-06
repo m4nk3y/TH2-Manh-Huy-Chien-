@@ -7,7 +7,7 @@
 
     <div style="display: flex; justify-content:center;">
         <a href="dashboard.php?route=add" class="btn btn btn-success mb-3">Thêm News</a>
-        <a href="../../index.php?controller=home&action=index" class="btn btn-danger mb-3 mx-5">Đăng xuất</a>
+        <a href="../../index.php?controller=admin&action=signout" class="btn btn-danger mb-3 mx-5">Đăng xuất</a>
     </div>
 
     <table class="table table-bordered table-striped">
