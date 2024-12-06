@@ -1,7 +1,7 @@
 Thành viên nhóm :
 2251172255 - Trần Đạt Chiến
-           - Bùi Đức Mạnh
-           - Vũ Đức Huy
+2251172418 - Bùi Đức Mạnh
+2251172377 - Vũ Đức Huy
 Công việc:
 Nhóm 1: Chiến
 Nhóm 2: Mạnh
