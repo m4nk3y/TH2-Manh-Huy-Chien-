@@ -2,43 +2,31 @@
 
 require_once 'models/News.php';
 require_once 'models/Category.php';
-
-
-
 class NewsController{
     public function index() {
         $newsModel = new News();
-        $newList = $newsModel->getAllNews(); // Fetch news
+        $newList = $newsModel->getAllNews();
         require_once __DIR__ . '/../views/home/index.php';
     }
     public function detail($id) {
-        // Get the news item by ID
-        $newsModel = new News();  // Assuming you have a News model class to fetch data
+        $newsModel = new News();  
         $newsDetail = $newsModel->getNewsById($id);
-
         if (!$newsDetail) {
             die("News item not found.");
         }
-
-        // Pass the news item data to the view
-        require_once "views/news/detail.php";  // Include the detail view
+        require_once "views/news/detail.php";  
     }
-
-
-
     public function search() {
         $newsModel = new News();
         $categoryModel = new Category();
         $query = isset($_GET['query']) ? trim($_GET['query']) : '';
 
-        // Fetch categories and news list
-        $categoryList = $categoryModel->getAllCategories(); // Assuming getCategories() fetches the categories
-        $newList = $newsModel->getAllNews(); // Fetching all news for sidebar
-
+        
+        $categoryList = $categoryModel->getAllCategories(); 
+        $newList = $newsModel->getAllNews(); 
         if ($query) {
             try {
-                // Search the news based on the query
-                $results = $newsModel->search($query);  // Assuming the search method in News works
+                $results = $newsModel->search($query); 
                 require_once __DIR__ . '/../views/home/index.php';
             } catch (Exception $e) {
                 echo "Error searching news: " . $e->getMessage();
@@ -47,8 +35,5 @@ class NewsController{
             echo "Please enter a search query.";
         }
     }
-
-
-
 }
 ?>

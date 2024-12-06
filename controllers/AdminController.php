@@ -6,9 +6,7 @@ require_once __DIR__ . '/../models/Category.php';
 
 class AdminController
 {
-
     public function signin() {
-       
         if (isset($_POST["username"]) && isset($_POST["password"])) {
             $username = $_POST['username'];
             $password = $_POST['password'];         
@@ -22,19 +20,15 @@ class AdminController
                         exit();
 
                     } 
-                    // else if ($user['role'] == 0) {
-                    //     $username_log = $_POST['username'];
-                    //     $object = new Category();
-                    //     $categoryList = $object->getAlldata();
-                    //     require_once "views/home/index.php";
-
-                    // }
                     elseif ($user['role'] == 0) {
+                        session_start(); 
                         $username_log = $_POST['username'];
+                        $_SESSION['username_log'] = $username_log; 
                         $object = new Category();
                         $categoryList = $object->getAllCategories();
-                        header("Location: index.php?controller=home&action=index");
-
+                        $newsModel = new News();
+                        $newList = $newsModel->getAllNews();
+                        require_once "views/home/index.php";
                         exit();
                     }
                 }

@@ -17,10 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container">
-            <a class="navbar-brand " href=""><img src="assets/images/logo.png" class="img-fluid rounded-top"
-
-
-                    alt="" />
+            <a class="navbar-brand " href="index.php?controller=home&action=home"><img src="assets/images/logo.png" class="img-fluid rounded-top" alt="" />
             </a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -37,13 +34,16 @@
 
                     <?php if (isset($username_log)): ?>
 
-                        <span class="btn btn-success mb-2 mr-2">Xin chào, <?php echo htmlspecialchars($username_log); ?>!</span>
+                    <span class="btn btn-success mb-2 mr-2">Xin chào,
+                        <?php echo htmlspecialchars($username_log); ?>!</span>
 
 
-                        <a name="" id="" class="btn btn-danger mb-2" href="index.php?controller=home&action=index" role="button">Đăng xuất</a>
+                    <a name="" id="" class="btn btn-danger mb-2" href="index.php?controller=home&action=index"
+                        role="button">Đăng xuất</a>
                     <?php else: ?>
 
-                        <a name="" id="" class="btn btn-primary mb-2" href="index.php?controller=admin&action=login" role="button">Đăng nhập</a>
+                    <a name="" id="" class="btn btn-primary mb-2" href="index.php?controller=admin&action=login"
+                        role="button">Đăng nhập</a>
                     <?php endif; ?>
 
                     <form method="GET" action="index.php">
@@ -109,7 +109,8 @@
                     <ul class="navbar-nav mx-auto">
                         <?php
                         foreach ($categoryList as $category) { ?>
-                            <li class="nav-item"><a class="nav-link" href="index.php?controller=news&action="><?= $category['name'] ?></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.php?controller=news&action="><?= $category['name'] ?></a></li>
                         <?php
                         }
                         ?>
@@ -124,43 +125,26 @@
             <div class="col-md-8">
                 <div class="text-center mb-3">
 
-
-
-
-
-
-
-
                     <?php if (isset($results) && !empty($results)): ?>
-                        <div class="card mt-4">
-                            <div class="card-header bg-primary text-white">
-                                <h2 class="h4 mb-0">Kết quả tìm kiếm</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group">
-                                    <?php foreach ($results as $item): ?>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <a href="index.php?controller=news&action=detail&id=<?= $item['id']; ?>" class="text-decoration-none">
-                                                <?= htmlspecialchars($item['title']); ?>
-                                            </a>
-
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h4 mb-0">Kết quả tìm kiếm</h2>
                         </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <?php foreach ($results as $item): ?>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="index.php?controller=news&action=detail&id=<?= $item['id']; ?>"
+                                        class="text-decoration-none">
+                                        <?= htmlspecialchars($item['title']); ?>
+                                    </a>
+
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
                     <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-
 
                     <img src="assets/images/baner-webthumb.jpg" alt="Event" class="img-fluid rounded">
 
@@ -182,10 +166,12 @@
                     <ul class="list-group">
                         <?php
                         foreach ($newList as $news) { ?>
-                            <li class="list-group-item"><a href="index.php?controller=news&action=detail&id=<?= $news['id']; ?>" class="text-decoration-none">
-                                    <?= htmlspecialchars($news['title']); ?>
-                                </a>
-                            </li>
+                        <li class="list-group-item"><a
+                                href="index.php?controller=news&action=detail&id=<?= $news['id']; ?>"
+                                class="text-decoration-none">
+                                <?= htmlspecialchars($news['title']); ?>
+                            </a>
+                        </li>
                         <?php
                         }
                         ?>
@@ -198,7 +184,6 @@
             </aside>
         </div>
     </main>
-
     <!-- Top Banners Section -->
     <div class="container mt-3">
         <div class="row g-3">
@@ -214,7 +199,6 @@
             </div>
         </div>
     </div>
-
     <!-- Training Section -->
     <div class="container mt-5">
         <h3 class="text-primary">ĐÀO TẠO</h3>
@@ -234,8 +218,8 @@
             <div class="col-md-4">
                 <div class="card h-100">
 
-                    <img src="assets/images/tuongvy.jpg" alt="Chuẩn đầu ra 1"
-                        class="card-img-top object-fit-cover" style="height: 250px;">
+                    <img src="assets/images/tuongvy.jpg" alt="Chuẩn đầu ra 1" class="card-img-top object-fit-cover"
+                        style="height: 250px;">
                     <div class="card-body">
                         <p class="card-text">
                             Thông báo tổ chức thi chuẩn tiếng Anh đầu ra cho trình độ đại học hệ chính quy...
@@ -245,8 +229,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="assets/images/haiduong.jpg" alt="Chuẫn đầu ra 2"
-                        class="card-img-top object-fit-cover" style="height: 250px;">
+                    <img src="assets/images/haiduong.jpg" alt="Chuẫn đầu ra 2" class="card-img-top object-fit-cover"
+                        style="height: 250px;">
                     <div class="card-body">
                         <p class="card-text">
                             Thông báo kết quả thi chuẩn tiếng Anh đầu ra cho sinh viên ĐHCQ đợt 3 năm 2024...
@@ -257,11 +241,9 @@
         </div>
     </div>
 
-    <!-- Sidebar Section -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <!-- Placeholder for future content -->
             </div>
             <div class="col-md-4">
                 <ul class="list-group">

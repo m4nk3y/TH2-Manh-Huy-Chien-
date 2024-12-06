@@ -1,5 +1,4 @@
 <?php
-// Trong Category.php
 require_once __DIR__ . '/../include/database.php';
 
 class Category

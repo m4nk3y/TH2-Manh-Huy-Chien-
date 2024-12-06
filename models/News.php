@@ -104,13 +104,12 @@ class News {
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':title', $title);
         $stmt->bindParam(':content', $content);
-        $stmt->bindParam(':image', $image_name);  // Lưu tên file ảnh
+        $stmt->bindParam(':image', $image_name);  
         $stmt->bindParam(':category_id', $category_id);
 
         if ($stmt->execute()) {
             return true;
         } else {
-            // Hiển thị lỗi nếu không thành công
             echo "Error: " . implode(", ", $stmt->errorInfo());
             return false;
         }
@@ -118,7 +117,6 @@ class News {
 
     public function updateNews($id, $title, $content, $image_name, $category_id)
     {
-        // Nếu có ảnh mới, cập nhật ảnh mới
         $sql = "UPDATE news SET title = :title, content = :content, image = :image, category_id = :category_id 
             WHERE id = :id";
 
