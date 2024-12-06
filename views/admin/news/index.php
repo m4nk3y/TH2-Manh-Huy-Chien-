@@ -6,8 +6,8 @@
     </div>
 
     <div style="display: flex; justify-content:center;">
-        <a href="/BTTH2PHP/Dev1/views/admin/dashboard.php?route=add" class="btn btn btn-success mb-3">Add News</a>
-        <a href="../../index.php?controller=home&action=index" class="btn btn btn-danger mb-3 mx-5">Đăng xuất</a>
+        <a href="dashboard.php?route=add" class="btn btn btn-success mb-3">Thêm News</a>
+        <a href="../../index.php?controller=home&action=index" class="btn btn-danger mb-3 mx-5">Đăng xuất</a>
     </div>
 
     <table class="table table-bordered table-striped">
@@ -44,3 +44,4 @@
 </div>
 
 <?php require __DIR__ . '/../../../include/footer.php' ?>
+
