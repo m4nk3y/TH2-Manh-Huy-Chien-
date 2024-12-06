@@ -32,7 +32,7 @@ class NewsController{
         $query = isset($_GET['query']) ? trim($_GET['query']) : '';
 
         // Fetch categories and news list
-        $categoryList = $categoryModel->getAlldata(); // Assuming getCategories() fetches the categories
+        $categoryList = $categoryModel->getAllCategories(); // Assuming getCategories() fetches the categories
         $newList = $newsModel->getAllNews(); // Fetching all news for sidebar
 
         if ($query) {
